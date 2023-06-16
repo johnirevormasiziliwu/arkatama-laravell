@@ -1,6 +1,5 @@
-@extends('layouts.main')
-
-@section('content')
+@extends('template.start')
+@section('contenct')
     <h1>Data Produk</h1>
 
     @php

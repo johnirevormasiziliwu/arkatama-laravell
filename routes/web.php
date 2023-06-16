@@ -20,9 +20,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/testing', function () {
+    return view('template.start');
+});
 
 // Practice Route
 
@@ -51,6 +51,8 @@ Route::get('/conflict/{nama}', function($namaitem) {
 // Route::get('/produk', [ItemController::class, 'item']);
 
 // View
+
+
 
 // Route Home
 Route::get('/', [LandingController::class, 'index']);

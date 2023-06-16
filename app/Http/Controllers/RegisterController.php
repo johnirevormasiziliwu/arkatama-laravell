@@ -21,7 +21,7 @@ class RegisterController extends Controller
             'email' => $request->input('email'),
             'password' => Hash::make($request->input('password')),
         ]);
-
+      
         return redirect('/login')->with('success', 'Registrasi Berhasil!');
     }
 }

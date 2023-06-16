@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('produk', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('order_id')->constrained('order')->cascadeOnUpdate()->cascadeOnDelete();
+            // $table->foreignId('order_id')->constrained('order')->cascadeOnUpdate()->cascadeOnDelete();
             $table->string('nama', 100);
             $table->string('deskripsi', 100);
             $table->integer('harga');
